@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>Judul Dokumen</title>
+    <style>
+        /*menargetkan seluruh tipe elemen */
+        *{
+            color: green;
+        }
+        /* menargetkan seluruh tipe elemen yang mengandung nilai "en" pada atribut lang */
+
+        *[lang^=en] {
+            font-style: italic;
+        }
+        /* menargetkan seluruh tipe elemen yang memiliki nilai "warning" pada atribut class*/
+        *.warning {
+            color: red;
+        }
+        /* menargetkan seluruh tipe elemen yang memiliki nilai "content" pada atribut id*/
+        *#content {
+            border: 1px solid blue;
+            padding: 20px;
+        }
+
+        </style>
+</head>
+<body>
+    <p> ini merupakan paragraf biasa atau tidak menerapkan atribut apapun. maka teks pada paragraf ini akan berwarna hijau</p>
+    <p lang="en-us"> this is an english paragraph contains en-us value of lang attribute, so this text will be green and italic.</p>
+
+    <h1> ini merupakan sebuah header biasa </h1>
+    <h1 lang="en-us"> this is an english header</h1>
+
+    <p class="warning"> perhatikan paragraf ini! paragraf ini merupakan paragraf yang memiliki kelas bernilai warning. sehingga texs dari paragraf ini akan berwaena merah</p>
+
+    <div id="content">
+        <p> ini merupakan sebuah texs di ddalam sebuah div yang memiliki id bernilai "content", seharusnya paragraf ini dibungkus dalam border yang memiliki padding 20px</p>
+    </div>
+</body>
+<html>
